@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('./fonts/Fraunces_72pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;
+  }
+
+  .card {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    translate: 50% -50%;
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+  }
+
+  img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem 0rem 0rem 2rem;
+  }
+
+  .right-panel {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: inline-block;
+  }
+
+  h1 {
+    font-family: Fraunces;
+    color: hsl(212, 21%, 14%);
+  }
+
+  .category {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+  }
+
+  .description {
+    color: hsl(228, 12%, 48%);
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .price {
+    font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+  }
+
+  .price__strikethrough {
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    position: relative;
+    top: -5px;
+    left: 10px;
+  }
+
+  button {
+    font-family: Montserrat;
+    font-weight: 700;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 1rem;
+    width: 100%;
+    height: 70px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .icon::before {
+    content: url(./images/icon-cart.svg);
+    position: relative;
+    left: -10px;
+  } 
+
+  @media (max-width: 375px) {
+
+
+
+    .card {
+
+      flex-direction: column;
+      justify-content: space-between;
+      width: 95%;
+      height: 95%;
+      position: absolute;
+      border-radius: 1rem;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+      position: relative;
+      object-fit: cover;
+      height: 45%;
+      border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .right-panel {
+        width: 95%;
+        padding: 0rem;
+        word-wrap : break-word;
+        padding: 0.5rem;
+      }
+
+      h1 {
+        font-family: Fraunces;
+        color: hsl(212, 21%, 14%);
+        font-size: 1.5rem;
+      }
+    
+      .category {
+        font-size: 1rem;
+      }
+    
+      .description {
+        font-size: 14px;
+      }
+    
+      .price {
+        font-size: 1.5rem;
+      }
+
+      button {
+
+        width: 100%;
+        height: 60px;
+
+      }
+  }
