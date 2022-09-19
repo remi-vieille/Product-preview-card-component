@@ -19,7 +19,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./images/mySolution.png)
+![](./images/screenshot desktop.png)
+![](./images/screenshot mobile.png)
 
 ### Links
 
@@ -38,6 +39,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [Vercel]()
+- Website - [Vercel](https://product-preview-card-component-lyart.vercel.app/)
 - Frontend Mentor - [@remi-vieille](https://www.frontendmentor.io/profile/remi-vieille)
 - Twitter - [@VieilleRemi](https://twitter.com/VieilleRemi)
